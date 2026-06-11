@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write Merge Request"
+  short_description: "Draft accurate MR and PR titles and descriptions"
+  default_prompt: "Use $write-merge-request to analyze these changes and draft an accurate merge request title and description."
