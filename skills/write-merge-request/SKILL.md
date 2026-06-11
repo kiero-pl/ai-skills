@@ -1,6 +1,6 @@
 ---
 name: write-merge-request
-description: Generate, rewrite, and review concise merge request or pull request titles and descriptions from code changes, commits, issue context, or an existing draft. Use when creating or improving GitLab merge requests, GitHub pull requests, MR or PR titles, descriptions, summaries, testing notes, reviewer context, or release-facing change explanations.
+description: Generate, rewrite, and review concise merge request or pull request titles and descriptions from code changes, commits, issue context, or an existing draft. Use when creating or improving GitLab merge requests, GitHub pull requests, MR or PR titles, descriptions, summaries, testing notes, reviewer context, or release-facing change explanations. Trigger on phrases such as "Write PR", "Write MR", "Write merge request", and "Write pull request", regardless of capitalization.
 ---
 
 # Write Merge Request
