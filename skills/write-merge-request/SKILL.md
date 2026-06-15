@@ -1,6 +1,6 @@
 ---
 name: write-merge-request
-description: Generate, rewrite, and review concise merge request or pull request titles and descriptions from code changes, commits, issue context, or an existing draft. Use when creating or improving GitLab merge requests, GitHub pull requests, MR or PR titles, descriptions, summaries, testing notes, reviewer context, or release-facing change explanations. Trigger on phrases such as "Write PR", "Write MR", "Write merge request", and "Write pull request", regardless of capitalization.
+description: Generate, rewrite, and review concise merge request or pull request titles and descriptions from code changes, commits, issue context, or an existing draft. Use when creating or improving GitLab merge requests, GitHub pull requests, MR or PR titles, descriptions, summaries, reviewer context, or release-facing change explanations. Trigger on phrases such as "Write PR", "Write MR", "Write merge request", and "Write pull request", regardless of capitalization.
 ---
 
 # Write Merge Request
@@ -49,11 +49,6 @@ Explain what changed and why in two or three sentences.
 - List the main behavioral or architectural changes.
 - Omit low-value file-by-file details.
 
-## Testing
-
-- List tests and checks that were actually executed.
-- Write `Not run` with a reason when no verification was performed.
-
 ## Related issues
 
 Include only issue references present in the available context.
@@ -64,6 +59,7 @@ Include any necessary legal, security, or compliance disclaimers required by the
 ```
 
 Omit an empty `Related issues` section unless the repository template requires it.
+Include testing information only when the repository template requires it.
 
 ## Maintain Accuracy
 
@@ -80,7 +76,7 @@ Omit an empty `Related issues` section unless the repository template requires i
 1. Check whether the title identifies the primary outcome.
 2. Check whether the description explains both what changed and why.
 3. Remove unsupported claims, repetition, and low-value implementation detail.
-4. Add missing testing, migration, compatibility, rollout, or risk information when supported.
+4. Add missing migration, compatibility, rollout, or risk information when supported.
 5. Preserve correct project terminology and the intended scope.
 6. Return the improved title and complete description.
 

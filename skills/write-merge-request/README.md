@@ -8,7 +8,6 @@ The skill:
 - writes concise, outcome-focused titles;
 - follows existing MR or PR templates;
 - separates behavioral changes from refactoring;
-- reports only tests that were actually executed;
 - avoids invented issue IDs, risks, and implementation claims;
 - supports both GitLab merge requests and GitHub pull requests.
 
