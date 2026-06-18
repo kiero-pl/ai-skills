@@ -1,22 +1,91 @@
 ---
 name: write-merge-request
-description: Generate, rewrite, and review concise merge request or pull request titles and descriptions from code changes, commits, issue context, or an existing draft. Use when creating or improving GitLab merge requests, GitHub pull requests, MR or PR titles, descriptions, summaries, reviewer context, or release-facing change explanations. Trigger on phrases such as "Write PR", "Write MR", "Write merge request", and "Write pull request", regardless of capitalization.
+description: Use for writing or reviewing merge request and pull request titles and descriptions from diffs, commits, issue context, or drafts. Use for PR/MR titles, descriptions, summaries, reviewer context, and release-facing change explanations.
 ---
 
 # Write Merge Request
 
+Write evidence-led PR/MR text: every claim must trace to the diff, commits, issue context, repository template, or supplied draft.
+
 ## Workflow
 
-1. Inspect the repository's contribution guide and merge or pull request template.
-2. Inspect the actual diff compare to master/main/develop, changed files, relevant commits, and supplied issue context.
-3. Identify the primary user-visible or architectural outcome and why it was needed.
-4. Separate the main change from refactoring, generated files, and incidental edits.
-5. Draft a concise title.
-6. Draft the description using the repository template or the fallback structure below.
-7. Verify that every statement is supported by the available evidence.
-8. Return the title and description in copy-ready form.
+1. Run `git fetch --all --prune` so remote branch and diff data are current.
+2. Identify the origin base branch the current branch was cut from. If that branch no longer exists, use the first available fallback in this order: `origin/develop`, `origin/main`, `origin/master`.
+3. Inspect the diff, changed files, relevant commits, contribution guide, PR/MR template, and supplied issue context until the main outcome, supporting changes, and uncertainty are accounted for.
+4. Identify the primary user-visible or architectural outcome and why it was needed until the title can describe one dominant result.
+5. Separate the main change from refactoring, generated files, and incidental edits until each major modified area is accounted for.
+6. If reviewing a supplied draft, use Review Existing Draft. Otherwise, use Write Draft.
+7. Return the title and complete description in copy-ready form.
 
-Ask for missing context only when it cannot be obtained from the repository and would materially change the result. Otherwise, state the uncertainty explicitly instead of inventing details.
+Ask for missing context only when it cannot be obtained from the repository and would materially change the result.
+
+## Git Inspection Commands
+
+Run:
+
+```bash
+git fetch --all --prune
+git branch --show-current
+git remote show origin
+git for-each-ref --format='%(refname:short)' refs/remotes/origin
+```
+
+Use the origin branch the current branch was cut from when it is known from user context, PR metadata, or branch metadata and still exists. If it is unknown or gone, choose the first branch that exists:
+
+```bash
+origin/develop
+origin/main
+origin/master
+```
+
+Use this script to select the base ref deterministically. Set `BASE_BRANCH` first only when the original base branch is known, without the `origin/` prefix:
+
+```bash
+git fetch --all --prune
+
+base_ref=""
+if [ -n "${BASE_BRANCH:-}" ] && git show-ref --verify --quiet "refs/remotes/origin/${BASE_BRANCH}"; then
+  base_ref="origin/${BASE_BRANCH}"
+else
+  for candidate in develop main master; do
+    if git show-ref --verify --quiet "refs/remotes/origin/${candidate}"; then
+      base_ref="origin/${candidate}"
+      break
+    fi
+  done
+fi
+
+if [ -z "$base_ref" ]; then
+  printf '%s\n' 'No origin base branch found.' >&2
+  exit 1
+fi
+
+printf '%s\n' "$base_ref"
+```
+
+Then inspect the chosen base:
+
+```bash
+git diff --stat origin/<base>...HEAD
+git diff --name-status origin/<base>...HEAD
+git diff origin/<base>...HEAD
+git log --oneline origin/<base>..HEAD
+```
+
+## Write Draft
+
+1. Draft a title using Write The Title.
+2. Draft the description using Write The Description.
+3. Apply Maintain Accuracy until every statement is evidence-led.
+
+## Review Existing Draft
+
+1. Check whether the title identifies the primary outcome.
+2. Check whether the description explains both what changed and why.
+3. Remove unsupported claims, repetition, and low-value implementation detail.
+4. Add missing migration, compatibility, rollout, or risk information when supported.
+5. Preserve correct project terminology and the intended scope.
+6. Apply Maintain Accuracy until every statement is evidence-led.
 
 ## Write The Title
 
@@ -48,17 +117,8 @@ Explain what changed and why in two or three sentences.
 
 - List the main behavioral or architectural changes.
 - Omit low-value file-by-file details.
-
-## Related issues
-
-Include only issue references present in the available context.
-
-## Disclaimer
-
-Include any necessary legal, security, or compliance disclaimers required by the repository or relevant to the change. For example "This change include mock interceptor for testing purposes before backend implementation is ready. It should not be used in production.".
 ```
 
-Omit an empty `Related issues` section unless the repository template requires it.
 Include testing information only when the repository template requires it.
 
 ## Maintain Accuracy
@@ -71,18 +131,9 @@ Include testing information only when the repository template requires it.
 - Highlight meaningful reviewer risks and non-obvious tradeoffs without exaggerating them.
 - Use technical terminology already established by the codebase.
 
-## Review An Existing Draft
-
-1. Check whether the title identifies the primary outcome.
-2. Check whether the description explains both what changed and why.
-3. Remove unsupported claims, repetition, and low-value implementation detail.
-4. Add missing migration, compatibility, rollout, or risk information when supported.
-5. Preserve correct project terminology and the intended scope.
-6. Return the improved title and complete description.
-
 ## Output
 
-Return:
+Return the title and complete description. Use this wrapper unless the user or repository format requires otherwise:
 
 ```markdown
 Title: <title>
