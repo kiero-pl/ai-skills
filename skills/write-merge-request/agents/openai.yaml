@@ -1,4 +1,4 @@
 interface:
   display_name: "Write Merge Request"
-  short_description: "Draft accurate MR and PR titles and descriptions"
-  default_prompt: "Use $write-merge-request to analyze these changes and draft an accurate merge request title and description."
+  short_description: "Write or review evidence-led PR/MR titles and descriptions"
+  default_prompt: "Use $write-merge-request to analyze the diff, commits, issue context, or draft and write or review an evidence-led PR/MR title and description."
