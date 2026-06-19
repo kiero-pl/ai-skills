@@ -1,0 +1,4 @@
+interface:
+  display_name: "Quick Repository Insights"
+  short_description: "Generate quick Git-history insights before reading code"
+  default_prompt: "Use $quick-repository-insights to analyze this repository with Git-history insights for churn, ownership, bug hotspots, momentum, and firefighting patterns."
