@@ -9,6 +9,10 @@ Reusable skills for AI coding agents.
     <td><a href="./skills/write-merge-request"><code>write-merge-request</code></a></td>
     <td>Creates accurate merge request and pull request titles and descriptions from repository changes.</td>
   </tr>
+  <tr>
+    <td><a href="./skills/quick-repository-insights"><code>quick-repository-insights</code></a></td>
+    <td>Generates quick Git-history insights about churn, ownership, bug hotspots, project momentum, and firefighting patterns.</td>
+  </tr>
 </table>
 
 ## Installation
