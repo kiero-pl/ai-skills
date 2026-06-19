@@ -1,6 +1,7 @@
 ---
 name: write-merge-request
 description: Use for writing or reviewing merge request and pull request titles and descriptions from diffs, commits, issue context, or drafts. Use for PR/MR titles, descriptions, summaries, reviewer context, and release-facing change explanations.
+license: MIT
 ---
 
 # Write Merge Request
