@@ -19,6 +19,8 @@ Help with an Obsidian-based personal journal while preserving privacy, source ac
 
 ## Default Rules
 
+- Determine the journal language before editing, reviewing, or creating entries. If the language cannot be inferred from the source notes or user request, ask one short clarification question.
+- If the user's project defines matching Obsidian templates, use the user's templates. Otherwise use the bundled templates from `templates/`.
 - Do not edit journal files unless the user explicitly asks to write changes to a specific file.
 - Separate source facts from interpretations.
 - Do not diagnose, moralize, or overwrite the user's personal tone.

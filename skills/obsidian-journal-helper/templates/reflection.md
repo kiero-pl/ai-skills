@@ -4,12 +4,12 @@ tags:
   - reflection
 ---
 
-# Reflection
+# 🪞 Reflection
 
-## Topic
+## 📌 Topic
 
-## Thoughts
+## ✍️ Thoughts
 
-## Insights
+## 💡 Insights
 
-## What I Will Do With This
+## 🧭 What I Will Do With This

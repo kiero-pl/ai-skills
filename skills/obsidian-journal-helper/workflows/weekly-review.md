@@ -12,6 +12,12 @@ Read:
 - the weekly note, if it already exists;
 - the linked monthly note only when needed for broader context.
 
+## Section Cleanup Rules
+
+- If a section is empty, ask whether it should be removed.
+- If a section contains user content, remove the instructional comment directly under that section heading.
+- Do not remove a section only because it has no content unless the user confirms.
+
 ## Steps
 
 1. Identify the week.

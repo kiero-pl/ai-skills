@@ -5,43 +5,43 @@ tags:
   - journal/yearly
 ---
 
-# Year YYYY
+# 🌍 Year YYYY
 
-## Year Motto
+## 🧭 Year Motto
 
-## Key Events
+## 📌 Key Events
 
-## Biggest Wins
+## 🏆 Biggest Wins
 
-## Hardest Moments
+## 🧱 Hardest Moments
 
-## What I Learned
+## 💡 What I Learned
 
-## Who I Became This Year
+## 🪞 Who I Became This Year
 
-## Life Areas
+## 🌿 Life Areas
 
-### Health
+### 🩺 Health
 
-### Work
+### 💼 Work
 
-### Learning
+### 📚 Learning
 
-### Relationships
+### 🤝 Relationships
 
-### Finances
+### 💰 Finances
 
-### Projects
+### 🚧 Projects
 
-### Meaning / Values
+### ✨ Meaning / Values
 
-## What I Want To Leave Behind
+## 🧹 What I Want To Leave Behind
 
-## What I Want To Continue
+## 🔁 What I Want To Continue
 
-## Direction For Next Year
+## 🎯 Direction For Next Year
 
-## Goals For Next Year
+## ✅ Goals For Next Year
 - [ ] 
 - [ ] 
 - [ ] 

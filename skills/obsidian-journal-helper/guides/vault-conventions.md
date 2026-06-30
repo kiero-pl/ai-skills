@@ -2,6 +2,13 @@
 
 Use these conventions when creating or updating Obsidian journal notes.
 
+## Template Selection
+
+- Check whether the user's project or vault defines a matching Obsidian template for the requested note type.
+- Use the user's template when one exists.
+- Use the bundled template from `templates/` only when no matching user template is available.
+- Preserve the user's template structure unless the user asks to reshape it.
+
 ## Date Identifiers
 
 - Daily note: `YYYY-MM-DD`.

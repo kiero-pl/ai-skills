@@ -5,18 +5,18 @@ tags:
   - project
 ---
 
-# Project Name
+# 🚧 Project Name
 
-## Goal
+## 🎯 Goal
 How will I know this project is complete?
 
-## Why It Matters
+## 🧭 Why It Matters
 
-## Next Steps
+## ✅ Next Steps
 - [ ] 
 - [ ] 
 - [ ] 
 
-## Notes
+## 📌 Notes
 
-## Links
+## 🔗 Links

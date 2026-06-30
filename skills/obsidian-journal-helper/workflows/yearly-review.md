@@ -12,6 +12,12 @@ Read:
 - weekly notes when monthly notes are missing or insufficient;
 - the yearly note, if it already exists.
 
+## Section Cleanup Rules
+
+- If a section is empty, ask whether it should be removed.
+- If a section contains user content, remove the instructional comment directly under that section heading.
+- Do not remove a section only because it has no content unless the user confirms.
+
 ## Steps
 
 1. Identify the year.

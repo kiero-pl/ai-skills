@@ -12,6 +12,18 @@ Read:
 - the linked weekly note only when needed for context;
 - the linked monthly note only when needed for broader context.
 
+## Section Cleanup Rules
+
+- If a section is empty, ask whether it should be removed.
+- If a section contains user content, remove the instructional comment directly under that section heading.
+- Do not remove a section only because it has no content unless the user confirms.
+
+## Daily-Specific Rules
+
+- If the `Journal` section mentions something for tomorrow in the journal's established language, move that information to the `Tomorrow` section.
+- Do not convert tomorrow notes into `Tasks` unless the source explicitly frames them as tasks.
+- Do not overwrite existing `Tomorrow` content; append or merge the moved information.
+
 ## Steps
 
 1. Identify the daily source.

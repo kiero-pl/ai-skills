@@ -17,48 +17,48 @@ energy: low | medium | high | unstable | depleted
 sleep: excellent | good | average | poor | very_poor | too_short | interrupted
 %%
 
-# YYYY-MM-DD
+# 📅 YYYY-MM-DD
 
-## Daily Intention
+## 🎯 Daily Intention
 %% What one thing would make today meaningful? %%
 
-## Most Important Things
+## ⭐ Most Important Things
 %% What should happen from my side for this day to go well? Avoid overload. Prefer up to 3 items. %%
 - [ ] 
 - [ ] 
 - [ ] 
 
-## Tasks
+## ✅ Tasks
 %% Less important tasks for today and tasks carried over from previous days. %%
 - [ ] 
 
-## Journal
+## ✍️ Journal
 %% What happened? How do I feel about it? What mattered most? What did I learn? What do I want to do tomorrow? %%
 - 
 
-## Emotions And Energy
+## 🌡️ Emotions And Energy
 %% What gave me energy today? What drained it? %%
 - 
 
-## Decisions
+## 🧠 Decisions
 %% What decisions did I make today? %%
 - 
 
-## Gratitude
+## 🙏 Gratitude
 %% What brought me joy, and what am I grateful for? %%
 - 
 - 
 - 
 
-## Learning
+## 📚 Learning
 %% What did I learn today? %%
 - 
 
-## Tomorrow
+## 🧭 Tomorrow
 %% What do I want to do or remember tomorrow? %%
 - 
 
-## Links
+## 🔗 Links
 - Week: [[YYYY-Www]]
 - Month: [[YYYY-MM]]
 - Year: [[YYYY]]

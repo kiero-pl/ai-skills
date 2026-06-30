@@ -6,51 +6,51 @@ tags:
   - journal/monthly
 ---
 
-# YYYY-MM
+# 📆 YYYY-MM
 
-## Month Theme
+## 🧭 Month Theme
 
-## Key Events
+## 📌 Key Events
 - 
 
-## What Went Well
+## 🏆 What Went Well
 - 
 
-## What Did Not Work
+## 🧱 What Did Not Work
 - 
 
-## Biggest Lessons
+## 💡 Biggest Lessons
 - 
 
-## Life Areas
+## 🌿 Life Areas
 
-### Health
+### 🩺 Health
 
-### Work
+### 💼 Work
 
-### Learning
+### 📚 Learning
 
-### Relationships
+### 🤝 Relationships
 
-### Finances
+### 💰 Finances
 
-### Projects
+### 🚧 Projects
 
-## Metrics
+## 📊 Metrics
 - Sleep:
 - Workouts:
 - Reading:
 - Deep Work:
 - Other:
 
-## Next Month
+## 🎯 Next Month
 
-### Direction
+### 🧭 Direction
 
-### Priorities
+### ✅ Priorities
 - [ ] 
 - [ ] 
 - [ ] 
 
-## Links
+## 🔗 Links
 - Year: [[YYYY]]

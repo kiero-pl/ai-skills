@@ -7,43 +7,43 @@ tags:
   - journal/weekly
 ---
 
-# Week YYYY-Www
+# 🗓️ Week YYYY-Www
 
-## Week Summary
-What mattered most?
+## 🧾 Week Summary
+%% What mattered most? %%
 
-## Wins
+## 🏆 Wins
 - 
 
-## Difficulties
+## 🧱 Difficulties
 - 
 
-## Lessons
+## 💡 Lessons
 - 
 
-## Health / Energy
+## 🌿 Health / Energy
 %% How were sleep, movement, rest, and energy? %%
 
-## Work / Learning
+## 💼 Work / Learning
 %% What moved forward? %%
 
-## Relationships
+## 🤝 Relationships
 %% What mattered in contact with other people? %%
 
-## Money
+## 💰 Money
 %% Did anything financially relevant happen? %%
 
-## Next Week
+## 🧭 Next Week
 %% What do I want to improve next week, and what matters most to do? %%
 
-### Priorities
+### 🎯 Priorities
 - [ ] 
 - [ ] 
 - [ ] 
 
-### To Improve
+### 🔧 To Improve
 - 
 
-## Links
+## 🔗 Links
 - Month: [[YYYY-MM]]
 - Year: [[YYYY]]
