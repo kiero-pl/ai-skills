@@ -19,7 +19,7 @@ Ask only for information that cannot be inferred and would change the result.
    Completion criterion: the note type and required date identifiers are known.
 
 2. Select the template.
-   Completion criterion: a matching user-defined template has been found and used, or no matching user template exists and the bundled template from `templates/` is selected.
+   Completion criterion: a matching user-defined template has been found and used, or no matching user template exists and the bundled template from `assets/` is selected.
 
 3. Apply `guides/vault-conventions.md`.
    Completion criterion: frontmatter, date fields, tags, links, and task syntax follow the vault conventions.

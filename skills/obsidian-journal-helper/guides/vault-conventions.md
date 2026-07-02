@@ -38,7 +38,7 @@ Ignore any folder mapping to `Reflections` — not used by this skill.
 
 - Check whether the user's vault defines a matching template under their templates folder (e.g. `90_Templates/`).
 - Use the user's template when one exists.
-- Use the bundled template from `templates/` only when no matching user template is available.
+- Use the bundled template from `assets/` only when no matching user template is available.
 - Preserve the user's template structure unless the user asks to reshape it.
 
 ## Date Identifiers

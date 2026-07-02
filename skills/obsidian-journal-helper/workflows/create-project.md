@@ -36,7 +36,7 @@ Common values:
    Completion criterion: the project name, likely project type, and available context are known.
 
 2. Select the template.
-   Completion criterion: a matching user-defined project template has been found and used, or no matching user template exists and `templates/project.md` is selected.
+   Completion criterion: a matching user-defined project template has been found and used, or no matching user template exists and `assets/project.md` is selected.
 
 3. Draft a flexible project note.
    Completion criterion: the note captures the useful sections for this project without forcing irrelevant sections.

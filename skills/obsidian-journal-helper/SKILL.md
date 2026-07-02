@@ -10,9 +10,9 @@ Help with an Obsidian-based personal journal while preserving privacy, source ac
 
 ## Routing
 
-- For capturing a quick idea to the inbox, load `workflows/inbox-capture.md` and `templates/inbox.md`.
-- For creating a daily, weekly, monthly, or yearly note, load `workflows/create-entry.md`, `guides/vault-conventions.md`, and the matching template: `templates/daily.md`, `templates/weekly.md`, `templates/monthly.md`, or `templates/yearly.md`.
-- For creating or organizing a project, load `workflows/create-project.md`, `guides/vault-conventions.md`, and `templates/project.md`.
+- For capturing a quick idea to the inbox, load `workflows/inbox-capture.md` and `assets/inbox.md`.
+- For creating a daily, weekly, monthly, or yearly note, load `workflows/create-entry.md`, `guides/vault-conventions.md`, and the matching template: `assets/daily.md`, `assets/weekly.md`, `assets/monthly.md`, or `assets/yearly.md`.
+- For creating or organizing a project, load `workflows/create-project.md`, `guides/vault-conventions.md`, and `assets/project.md`.
 - For editing an existing journal entry or correcting spelling and grammar, load `workflows/edit-entry.md` and `guides/journal-principles.md`.
 - For a daily review, load `workflows/daily-review.md` and `guides/journal-principles.md`.
 - For a weekly review, load `workflows/weekly-review.md` and `guides/journal-principles.md`.
@@ -22,7 +22,7 @@ Help with an Obsidian-based personal journal while preserving privacy, source ac
 ## Default Rules
 
 - Determine the journal language before editing, reviewing, or creating entries. If the language cannot be inferred from the source notes or user request, ask one short clarification question.
-- If the user's vault defines matching Obsidian templates, use the user's templates. Otherwise use the bundled templates from `templates/`.
+- If the user's vault defines matching Obsidian templates, use the user's templates. Otherwise use the bundled templates from `assets/`.
 - Detect the actual folder names from the user's vault rather than assuming the default English names.
 - The inbox is for loose thoughts and ideas. Do not automatically convert inbox items into tasks or action items.
 - Creating a new note is allowed when the user's request is to create or save one. Do not modify existing journal files unless the user explicitly asks to write changes to a specific file.
