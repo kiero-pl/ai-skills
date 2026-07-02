@@ -17,6 +17,7 @@ Read:
 - If a section is empty, ask whether it should be removed.
 - If a section contains user content, remove the instructional comment directly under that section heading.
 - Do not remove a section only because it has no content unless the user confirms.
+- If all frontmatter fields have values, remove the helper comment block listing the allowed values (the `%% ... %%` block after the frontmatter).
 
 ## Daily-Specific Rules
 
