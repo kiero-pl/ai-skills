@@ -1,12 +1,12 @@
 # Create Entry Workflow
 
-Use this workflow when the user wants to create a new Obsidian journal note.
+Use this workflow when the user wants to create a new daily, weekly, monthly, or yearly Obsidian journal note. For projects, use `workflows/create-project.md` instead.
 
 ## Inputs
 
 Determine:
 
-- the note type: daily, weekly, monthly, yearly, or project;
+- the note type: daily, weekly, monthly, or yearly;
 - the target date or period;
 - the destination path, if the user expects the file to be written;
 - any source notes that should inform the draft.

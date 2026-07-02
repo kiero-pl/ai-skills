@@ -5,7 +5,7 @@ Creates, edits, corrects, and reviews an Obsidian-based personal journal using s
 The skill:
 
 - captures quick ideas and thoughts to the inbox;
-- creates daily, weekly, monthly, yearly, and project notes;
+- creates daily, weekly, monthly, yearly, and flexible project notes;
 - corrects spelling, grammar, punctuation, and obvious typos;
 - reviews journal entries without inventing unsupported facts;
 - separates facts from interpretations;

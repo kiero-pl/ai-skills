@@ -1,6 +1,6 @@
 ---
 name: obsidian-journal-helper
-description: Use when working with an Obsidian journal: capturing inbox ideas; creating daily, weekly, monthly, yearly, or project notes; reviewing journal entries; correcting spelling and grammar; editing journal prose while preserving the author's voice.
+description: Use when working with an Obsidian journal: capturing inbox ideas; creating daily, weekly, monthly, yearly, or project notes; organizing projects; reviewing journal entries; correcting spelling and grammar; editing journal prose while preserving the author's voice.
 license: MIT
 ---
 
@@ -11,7 +11,8 @@ Help with an Obsidian-based personal journal while preserving privacy, source ac
 ## Routing
 
 - For capturing a quick idea to the inbox, load `workflows/inbox-capture.md` and the inbox template.
-- For creating a new note, load `workflows/create-entry.md`, `guides/vault-conventions.md`, and the matching file from `templates/`.
+- For creating a daily, weekly, monthly, or yearly note, load `workflows/create-entry.md`, `guides/vault-conventions.md`, and the matching file from `templates/`.
+- For creating or organizing a project, load `workflows/create-project.md`, `guides/vault-conventions.md`, and `templates/project.md`.
 - For editing an existing journal entry or correcting spelling and grammar, load `workflows/edit-entry.md` and `guides/journal-principles.md`.
 - For a daily review, load `workflows/daily-review.md` and `guides/journal-principles.md`.
 - For a weekly review, load `workflows/weekly-review.md` and `guides/journal-principles.md`.
