@@ -27,11 +27,17 @@ Ask only for information that cannot be inferred and would change the result.
 4. Fill only safe, supported content.
    Completion criterion: generated content is based on the user's request or supplied sources, and empty prompts remain available for the author.
 
-5. Return or write the note.
-   Completion criterion: the note is returned in Markdown, or written only to the explicit path requested by the user.
+5. Resolve the target path.
+   Completion criterion: the file path is determined using `guides/vault-conventions.md` and the detected folder structure of the user's vault.
+
+6. Write the note to the resolved path.
+   Completion criterion: the file is created at the correct vault location.
+
+7. Confirm the save.
+   Completion criterion: the user is told the path where the note was saved.
 
 ## Output
 
-Return the complete note in a Markdown code block unless the user asked to write it to a file.
+Write the note to the vault by default. Only return a Markdown code block when the user explicitly asks not to write a file.
 
-When writing to a file, report the path changed and avoid adding a second copy of the full note unless the user asks.
+When writing to a file, report the path created and avoid adding a second copy of the full note unless the user asks.

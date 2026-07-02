@@ -10,6 +10,7 @@ tags:
 mood:
 energy:
 sleep:
+reviewed: false
 ---
 %%
 mood: calm | good | neutral | tired | tense | sad | frustrated | grateful | motivated | scattered

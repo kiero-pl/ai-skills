@@ -34,6 +34,9 @@ If the mode is unclear, default to spelling and grammar correction plus a light 
 6. Produce the edited result.
    Completion criterion: the output is ready to paste back into Obsidian or written only to the explicit file requested by the user.
 
+7. Ask the user whether to set `reviewed: true` on the processed entry frontmatter.
+   Completion criterion: the user confirmed or declined, and the frontmatter is updated accordingly when confirmed.
+
 ## Output
 
 For normal edits, return:

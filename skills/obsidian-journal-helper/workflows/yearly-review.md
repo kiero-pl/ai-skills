@@ -41,6 +41,9 @@ Read:
 7. Check the result against `guides/journal-principles.md`.
    Completion criterion: the review is nonjudgmental and does not overstate the evidence.
 
+8. Ask the user whether to set `reviewed: true` on the processed entry frontmatter.
+   Completion criterion: the user confirmed or declined, and the frontmatter is updated accordingly when confirmed.
+
 ## Response Format
 
 ```markdown

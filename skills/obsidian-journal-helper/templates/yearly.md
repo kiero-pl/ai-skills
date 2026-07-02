@@ -3,6 +3,7 @@ type: yearly
 year: YYYY
 tags:
   - journal/yearly
+reviewed: false
 ---
 
 # 🌍 Year YYYY

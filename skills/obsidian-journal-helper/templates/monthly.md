@@ -4,6 +4,7 @@ month: YYYY-MM
 year: YYYY
 tags:
   - journal/monthly
+reviewed: false
 ---
 
 # 📆 YYYY-MM

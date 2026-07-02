@@ -41,6 +41,9 @@ Read:
 7. Check the result against `guides/journal-principles.md`.
    Completion criterion: the review states limitations when the source base is sparse.
 
+8. Ask the user whether to set `reviewed: true` on the processed entry frontmatter.
+   Completion criterion: the user confirmed or declined, and the frontmatter is updated accordingly when confirmed.
+
 ## Response Format
 
 ```markdown

@@ -5,6 +5,7 @@ days: YYYY-MM-DD - YYYY-MM-DD
 year: YYYY
 tags:
   - journal/weekly
+reviewed: false
 ---
 
 # 🗓️ Week YYYY-Www
