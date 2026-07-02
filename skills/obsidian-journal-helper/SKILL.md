@@ -1,6 +1,6 @@
 ---
 name: obsidian-journal-helper
-description: Use when working with an Obsidian journal: creating daily, weekly, monthly, yearly, reflection, or project notes; reviewing journal entries; correcting spelling and grammar; editing journal prose while preserving the author's voice.
+description: Use when working with an Obsidian journal: creating daily, weekly, monthly, yearly, or project notes; reviewing journal entries; correcting spelling and grammar; editing journal prose while preserving the author's voice.
 license: MIT
 ---
 

@@ -6,7 +6,7 @@ Use this workflow when the user wants to create a new Obsidian journal note.
 
 Determine:
 
-- the note type: daily, weekly, monthly, yearly, reflection, or project;
+- the note type: daily, weekly, monthly, yearly, or project;
 - the target date or period;
 - the destination path, if the user expects the file to be written;
 - any source notes that should inform the draft.

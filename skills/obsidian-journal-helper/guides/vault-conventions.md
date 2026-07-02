@@ -19,8 +19,9 @@ Use these conventions when creating or updating Obsidian journal notes.
 ## Frontmatter
 
 - Keep frontmatter valid YAML.
-- Use `type` to identify the note kind: `daily`, `weekly`, `monthly`, `yearly`, `reflection`, or `project`.
+- Use `type` to identify the note kind: `daily`, `weekly`, `monthly`, `yearly`, or `project`.
 - Use date fields that match the note kind.
+- Use `reviewed: true/false` to mark whether the entry has been reviewed and revised by AI. Defaults to `false`.
 - Preserve existing frontmatter keys unless the user asks to change them.
 
 ## Links
