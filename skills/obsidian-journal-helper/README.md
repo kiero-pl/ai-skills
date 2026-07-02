@@ -56,6 +56,12 @@ Save this idea to my inbox: start learning woodworking.
 
 `SKILL.md` acts as a router. It points the agent to a focused workflow and only the template required for the current task.
 
+## Evals
+
+The skill includes lightweight eval scenarios in `evals/evals.json`. They cover entry creation, inbox capture, daily and weekly review behavior, project creation, and tone-preserving edits.
+
+These evals are intended as human-readable quality checks and can be used as a starting point for automated skill evaluation.
+
 ## License
 
 MIT

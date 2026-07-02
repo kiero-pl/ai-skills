@@ -23,3 +23,8 @@ Use these rules whenever reading, reviewing, editing, or summarizing journal ent
 - Do not edit journal files unless the user explicitly asks for a write to a specific path.
 - Prefer returning a ready-to-paste draft when write permission or destination is unclear.
 - Do not delete or rewrite existing journal content unless the user explicitly asks for that operation.
+
+## Review Marker
+
+- After reviewing or editing an entry, ask the user whether to set `reviewed: true` in frontmatter.
+- Do not set `reviewed: true` automatically.

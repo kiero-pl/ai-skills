@@ -1,0 +1,35 @@
+{
+  "skill_name": "obsidian-journal-helper",
+  "evals": [
+    {
+      "id": "create-daily-note",
+      "prompt": "Create a daily journal note for 2026-07-02.",
+      "expected_output": "Creates a daily note using the daily template, correct date identifiers, reviewed: false, and the vault's daily-note path."
+    },
+    {
+      "id": "capture-inbox-idea",
+      "prompt": "Save this idea to my inbox: build a small wooden shelf for the garage.",
+      "expected_output": "Creates an inbox note named with the date and kebab-case idea title, preserves the idea without turning it into a task."
+    },
+    {
+      "id": "daily-review-tomorrow",
+      "prompt": "Review this daily note. The Journal section mentions something to do tomorrow.",
+      "expected_output": "Moves tomorrow-related content from Journal to Tomorrow, does not place it in Tasks, and asks whether to set reviewed: true."
+    },
+    {
+      "id": "create-project-note",
+      "prompt": "Create a project note for replacing the garden fence.",
+      "expected_output": "Creates a flexible project note with project_type inferred or left blank, checkbox Steps, optional project sections, and a flat projects-folder path."
+    },
+    {
+      "id": "edit-without-changing-tone",
+      "prompt": "Fix spelling and grammar in this journal entry without changing my tone.",
+      "expected_output": "Corrects language issues while preserving meaning, uncertainty, and personal voice, then asks whether to set reviewed: true."
+    },
+    {
+      "id": "weekly-review-missing-days",
+      "prompt": "Review this week, but only Monday, Wednesday, and Sunday notes exist.",
+      "expected_output": "Reviews only available days, does not treat missing days as facts, labels interpretations, and notes source limitations."
+    }
+  ]
+}

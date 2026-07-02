@@ -8,7 +8,7 @@ Determine:
 
 - the note type: daily, weekly, monthly, or yearly;
 - the target date or period;
-- the destination path, if the user expects the file to be written;
+- the destination path, if the user overrides the default vault path;
 - any source notes that should inform the draft.
 
 Ask only for information that cannot be inferred and would change the result.
