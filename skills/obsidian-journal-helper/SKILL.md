@@ -1,6 +1,6 @@
 ---
 name: obsidian-journal-helper
-description: Use when working with an Obsidian journal vault: capture inbox ideas, create daily/weekly/monthly/yearly notes, create or organize project notes, review journal entries, correct spelling and grammar, or edit personal prose while preserving the author's voice.
+description: "Use when working with an Obsidian journal vault: capture inbox ideas, create daily/weekly/monthly/yearly notes, create or organize project notes, review journal entries, correct spelling and grammar, or edit personal prose while preserving the author's voice."
 license: MIT
 ---
 
