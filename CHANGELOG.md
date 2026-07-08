@@ -2,6 +2,15 @@
 
 Changes are grouped by date because this repository does not use versioned releases.
 
+## 2026-07-08
+
+- Added the `obsidian-journal-helper` skill for creating, editing, and reviewing notes in an Obsidian journal vault.
+- Added focused workflows for inbox capture, daily/weekly/monthly/yearly reviews, journal entry editing, and project note creation.
+- Added bundled Obsidian note templates for inbox, daily, weekly, monthly, yearly, and project notes.
+- Added vault-convention and journal-principles guidance to preserve source accuracy, personal tone, and runtime folder detection.
+- Added lightweight eval scenarios covering note creation, inbox capture, reviews, project notes, and tone-preserving edits.
+- Added OpenAI agent metadata and per-skill README and license files for `obsidian-journal-helper`.
+
 ## 2026-06-19
 
 - Added the `quick-repository-insights` skill for quick Git-history repository diagnostics.

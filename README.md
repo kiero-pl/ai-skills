@@ -13,6 +13,10 @@ Reusable skills for AI coding agents.
     <td><a href="./skills/quick-repository-insights"><code>quick-repository-insights</code></a></td>
     <td>Generates quick Git-history insights about churn, ownership, bug hotspots, project momentum, and firefighting patterns.</td>
   </tr>
+  <tr>
+    <td><a href="./skills/obsidian-journal-helper"><code>obsidian-journal-helper</code></a></td>
+    <td>Creates, edits, corrects, and reviews notes in an Obsidian journal vault while preserving the author's voice.</td>
+  </tr>
 </table>
 
 ## Installation
