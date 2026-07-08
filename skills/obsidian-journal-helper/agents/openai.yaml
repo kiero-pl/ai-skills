@@ -1,0 +1,4 @@
+interface:
+  display_name: "Obsidian Journal Helper"
+  short_description: "Create, edit, and review notes in an Obsidian journal vault"
+  default_prompt: "Use $obsidian-journal-helper to help with an Obsidian journal vault: capture inbox ideas, create daily/weekly/monthly/yearly or project notes, review entries, or correct spelling and grammar while preserving the author's voice."
