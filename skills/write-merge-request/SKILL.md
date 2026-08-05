@@ -13,10 +13,11 @@ Write evidence-led PR/MR text: every claim must trace to the diff, commits, issu
 1. Run `git fetch --all --prune` so remote branch and diff data are current.
 2. Identify the origin base branch the current branch was cut from. If that branch no longer exists, use the first available fallback in this order: `origin/develop`, `origin/main`, `origin/master`.
 3. Inspect the diff, changed files, relevant commits, contribution guide, PR/MR template, and supplied issue context until the main outcome, supporting changes, and uncertainty are accounted for.
-4. Identify the primary user-visible or architectural outcome and why it was needed until the title can describe one dominant result.
-5. Separate the main change from refactoring, generated files, and incidental edits until each major modified area is accounted for.
-6. If reviewing a supplied draft, use Review Existing Draft. Otherwise, use Write Draft.
-7. Return the title and complete description in copy-ready form.
+4. Resolve task context using Task Context.
+5. Identify the primary user-visible or architectural outcome and why it was needed until the title can describe one dominant result.
+6. Separate the main change from refactoring, generated files, and incidental edits until each major modified area is accounted for.
+7. If reviewing a supplied draft, use Review Existing Draft. Otherwise, use Write Draft.
+8. Return the title and complete description in copy-ready form.
 
 Ask for missing context only when it cannot be obtained from the repository and would materially change the result.
 
@@ -73,6 +74,26 @@ git diff origin/<base>...HEAD
 git log --oneline origin/<base>..HEAD
 ```
 
+## Task Context
+
+Treat task identifiers from branch names as candidates, not complete context. When the branch name contains an obvious tracker key or issue number, such as `ABC-123`, `GH-42`, or `#42`, ask the user to confirm it and offer to add the task link: `I recognize task ID <task-id>. Is that correct? Do you want to add a link to the task?`
+
+If the branch name does not contain a task identifier, ask the user for the task link.
+
+When the user supplies a task link:
+
+- Infer a task identifier from the link only when it contains an obvious tracker key or issue number. If the link does not contain one, do not treat opaque IDs, UUIDs, or Notion page IDs as task identifiers.
+- Use a task identifier from the branch only after the user confirms it.
+- If neither the confirmed branch ID nor the link contains a task identifier, ask for the task identifier only when the repository title convention requires one.
+- Add the task link to the Summary as `Task: [<task-name>](<link>)`. Derive `<task-name>` from the linked page title, URL slug, or user-supplied name.
+- Use the task identifier in the title only when it was confirmed from the branch, inferred from the link, or supplied by the user.
+
+Example: for branch `feature/common-carousel-policy` and Notion link
+`https://app.notion.com/p/ginger-thing-030/Jedna-polityka-layoutu-dla-rodziny-karuzel-3b1b0290b9ef8121b453cef50ca5bb22`,
+do not use the Notion page ID in the title. Add
+`Task: [Jedna polityka layoutu dla rodziny karuzel](https://app.notion.com/p/ginger-thing-030/Jedna-polityka-layoutu-dla-rodziny-karuzel-3b1b0290b9ef8121b453cef50ca5bb22)`
+to the Summary.
+
 ## Write Draft
 
 1. Draft a title using Write The Title.
@@ -94,7 +115,7 @@ git log --oneline origin/<base>..HEAD
 - Use imperative mood unless the repository consistently uses another convention.
 - Keep the title under 72 characters when practical.
 - Follow established repository conventions, including Conventional Commits, scopes, or issue IDs.
-- Include an issue identifier only when it is present in the supplied context, branch name or required by the repository.
+- Include a task identifier only when Task Context resolved one from the branch, supplied link, user context, or repository requirement.
 - Avoid vague titles such as `Fix issue`, `Update code`, `Changes`, or `Various improvements`.
 - Do not list multiple minor implementation details in the title.
 
@@ -122,11 +143,13 @@ Explain what changed and why in two or three sentences.
 
 Include testing information only when the repository template requires it.
 
+When Task Context includes a task link, put `Task: [<task-name>](<link>)` in the Summary.
+
 ## Maintain Accuracy
 
 - Base claims on the diff, commits, tests, and issue context.
 - Do not claim that tests pass unless there is evidence they were executed successfully.
-- Do not invent issue identifiers, deployment impact, compatibility guarantees, or performance results.
+- Do not invent task identifiers, deployment impact, compatibility guarantees, or performance results.
 - Distinguish functional changes from refactoring with no intended behavior change.
 - Mention migrations, configuration changes, feature flags, breaking changes, and rollout steps when present.
 - Highlight meaningful reviewer risks and non-obvious tradeoffs without exaggerating them.
